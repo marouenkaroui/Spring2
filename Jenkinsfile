@@ -17,7 +17,7 @@ pipeline {
              
             steps {
                 echo 'cleaning project ...'
-                sh 'mvn clean'
+                //sh 'mvn clean'
             }
         }
         
