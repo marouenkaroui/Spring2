@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'Pulling... ';
                     git branch: 'main',
-                        url : 'https://github.com/marouen/Spring2.git';
+                        url : 'https://github.com/marouenkaroui/Spring2.git';
             }
         }
 
