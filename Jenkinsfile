@@ -3,6 +3,9 @@ pipeline {
 	/*environment {
     		DOCKERHUB_CREDENTIALS=credentials('dockerhub')
     		}*/
+    		tools {
+    		maven "M2_HOME"
+    		}
     stages {
         stage('Checkout GIT') {
             steps {
@@ -17,7 +20,7 @@ pipeline {
              
             steps {
                 echo 'cleaning project ...'
-                //sh 'mvn clean'
+                //sh 'mvn -Dmaven.test.failure.ignore=true clean package'
             }
         }
         
