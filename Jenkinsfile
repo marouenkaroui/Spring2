@@ -30,7 +30,7 @@ pipeline {
                
             }
         } 
-        stage('Nexus') {
+        /*stage('Nexus') {
             steps {
                 sh 'mvn deploy'
             }
@@ -42,7 +42,7 @@ pipeline {
 						}
                
             }
-        }
+        }*/
            
      stage ('Mockito/Junit') {
              steps {
